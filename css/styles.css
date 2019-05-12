@@ -1,0 +1,1192 @@
+.preloader{
+	background: url(../images/preloader.gif) no-repeat center orange;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+  z-index: 5;
+}
+
+.mainTitleGame{
+  text-align: center;
+  height: 40px;
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  position: fixed;
+  background-color: rgba(255,255,255, 0.8);
+  top: 0px;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: default;
+}
+
+.container{
+  background-color: brown;
+}
+
+.tablero{
+  display: grid;
+  grid-template-columns: repeat(23, 50px);
+  grid-template-rows: repeat(17, 50px);
+  border: 5px solid gray;
+  padding: 0.3em;
+}
+
+.tablero li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../images/free-cell.png) no-repeat center;
+  list-style: none;
+  font-size: 1.5em;
+  border: 2px solid lightgray;
+}
+
+/* Orchard */
+
+.orchardVertical{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor:pointer;
+  background: url(../images/metalAge/orchard-vertical.png) no-repeat center !important;
+}
+
+.orchardHorizontal{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor:pointer;
+  background: url(../images/metalAge/orchard-horizontal.png) no-repeat center !important;
+}
+
+.orchardDiagonal1{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor:pointer;
+  background: url(../images/metalAge/orchard-diagonal1.png) no-repeat center !important;
+}
+
+.orchardDiagonal2{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor:pointer;
+  background: url(../images/metalAge/orchard-diagonal2.png) no-repeat center !important;
+}
+
+.house{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor:pointer;
+  background: url(../images/contemporaryAge/house.png) no-repeat center !important;
+}
+
+.flat{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/contemporaryAge/flat.png) no-repeat center !important;
+}
+
+.office{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/contemporaryAge/office.png) no-repeat center !important;
+}
+
+.factory{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/contemporaryAge/factory.png) no-repeat center !important;
+}
+
+.nuclearPlant{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/contemporaryAge/nuclear-plant.png) no-repeat center !important;
+}
+
+/* Stonage Age */
+.collectorFoodWild{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/stoneAge/collectorFoodWild.png) no-repeat center !important;
+}
+
+.collectorWood{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/stoneAge/collectorWood.png) no-repeat center !important;
+}
+
+.collectorStone{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/stoneAge/collectorStone.png) no-repeat center !important;
+}
+
+.collectorFreshWater{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/stoneAge/collectorFreshWater.png) no-repeat center !important;
+}
+
+
+
+.pathway-c{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/stoneAge/pathway-c.png) no-repeat center !important;
+}
+
+.pathway-e{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/stoneAge/pathway-e.png) no-repeat center !important;
+}
+
+.pathway-eo{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/stoneAge/pathway-eo.png) no-repeat center !important;
+}
+
+.pathway-n{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/stoneAge/pathway-n.png) no-repeat center !important;
+}
+
+.pathway-ne{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/stoneAge/pathway-ne.png) no-repeat center !important;
+}
+
+.pathway-no{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/stoneAge/pathway-no.png) no-repeat center !important;
+}
+
+.pathway-ns{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/stoneAge/pathway-ns.png) no-repeat center !important;
+}
+
+.pathway-o{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/stoneAge/pathway-o.png) no-repeat center !important;
+}
+
+.pathway-s{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/stoneAge/pathway-s.png) no-repeat center !important;
+}
+
+.pathway-se{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/stoneAge/pathway-se.png) no-repeat center !important;
+}
+
+.pathway-so{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/stoneAge/pathway-so.png) no-repeat center !important;
+}
+
+.pathway-te{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/stoneAge/pathway-te.png) no-repeat center !important;
+}
+
+.pathway-tn{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/stoneAge/pathway-tn.png) no-repeat center !important;
+}
+
+.pathway-to{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/stoneAge/pathway-to.png) no-repeat center !important;
+}
+
+.pathway-ts{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/stoneAge/pathway-ts.png) no-repeat center !important;
+}
+
+/* Metal Age */
+.way-c{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/metalAge/way-c.png) no-repeat center !important;
+}
+
+.way-e{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/metalAge/way-e.png) no-repeat center !important;
+}
+
+.way-eo{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/metalAge/way-eo.png) no-repeat center !important;
+}
+
+.way-n{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/metalAge/way-n.png) no-repeat center !important;
+}
+
+.way-ne{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/metalAge/way-ne.png) no-repeat center !important;
+}
+
+.way-no{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/metalAge/way-no.png) no-repeat center !important;
+}
+
+.way-ns{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/metalAge/way-ns.png) no-repeat center !important;
+}
+
+.way-o{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/metalAge/way-o.png) no-repeat center !important;
+}
+
+.way-s{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/metalAge/way-s.png) no-repeat center !important;
+}
+
+.way-se{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/metalAge/way-se.png) no-repeat center !important;
+}
+
+.way-so{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/metalAge/way-so.png) no-repeat center !important;
+}
+
+.way-te{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/metalAge/way-te.png) no-repeat center !important;
+}
+
+.way-tn{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/metalAge/way-tn.png) no-repeat center !important;
+}
+
+.way-to{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/metalAge/way-to.png) no-repeat center !important;
+}
+
+.way-ts{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/metalAge/way-ts.png) no-repeat center !important;
+}
+
+/* Old Age */
+.paved-c{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/oldAge/paved-c.png) no-repeat center !important;
+}
+
+.paved-e{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/oldAge/paved-e.png) no-repeat center !important;
+}
+
+.paved-eo{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/oldAge/paved-eo.png) no-repeat center !important;
+}
+
+.paved-n{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/oldAge/paved-n.png) no-repeat center !important;
+}
+
+.paved-ne{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/oldAge/paved-ne.png) no-repeat center !important;
+}
+
+.paved-no{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/oldAge/paved-no.png) no-repeat center !important;
+}
+
+.paved-ns{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/oldAge/paved-ns.png) no-repeat center !important;
+}
+
+.paved-o{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/oldAge/paved-o.png) no-repeat center !important;
+}
+
+.paved-s{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/oldAge/paved-s.png) no-repeat center !important;
+}
+
+.paved-se{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/oldAge/paved-se.png) no-repeat center !important;
+}
+
+.paved-so{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/oldAge/paved-so.png) no-repeat center !important;
+}
+
+.paved-te{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/oldAge/paved-te.png) no-repeat center !important;
+}
+
+.paved-tn{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/oldAge/paved-tn.png) no-repeat center !important;
+}
+
+.paved-to{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/oldAge/paved-to.png) no-repeat center !important;
+}
+
+.paved-ts{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/oldAge/paved-ts.png) no-repeat center !important;
+}
+
+/* Middle Age */
+
+/* Modern Age */
+
+/* Contemporary Age */
+.road-c{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/contemporaryAge/road-c.png) no-repeat center !important;
+}
+
+.road-e{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/contemporaryAge/road-e.png) no-repeat center !important;
+}
+
+.road-eo{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/contemporaryAge/road-eo.png) no-repeat center !important;
+}
+
+.road-n{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/contemporaryAge/road-n.png) no-repeat center !important;
+}
+
+.road-ne{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/contemporaryAge/road-ne.png) no-repeat center !important;
+}
+
+.road-no{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/contemporaryAge/road-no.png) no-repeat center !important;
+}
+
+.road-ns{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/contemporaryAge/road-ns.png) no-repeat center !important;
+}
+
+.road-o{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/contemporaryAge/road-o.png) no-repeat center !important;
+}
+
+.road-s{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/contemporaryAge/road-s.png) no-repeat center !important;
+}
+
+.road-se{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/contemporaryAge/road-se.png) no-repeat center !important;
+}
+
+.road-so{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/contemporaryAge/road-so.png) no-repeat center !important;
+}
+
+.road-te{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/contemporaryAge/road-te.png) no-repeat center !important;
+}
+
+.road-tn{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/contemporaryAge/road-tn.png) no-repeat center !important;
+}
+
+.road-to{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/contemporaryAge/road-to.png) no-repeat center !important;
+}
+
+.road-ts{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/contemporaryAge/road-ts.png) no-repeat center !important;
+}
+
+
+
+
+
+
+
+
+/***************************/
+
+
+.waterWell{
+  text-align: center;
+  color: black;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  background: url(../images/metalAge/water-well.png) no-repeat center !important;
+}
+
+.alerts{
+  font-family: Courier, sans-serif;
+  font-size: 30px;
+  top:70%;
+  left:80%;
+  position:absolute;
+  height: 130px;
+  width: 300px;
+  border: 1px solid red;
+
+}
+
+.titleGame{
+  font-size: 30px;
+  color:black;
+  text-align: center;
+  margin: 0px !important;
+}
+
+.title{
+  font-size: 25px;
+  color:black;
+  text-align: center;
+  margin: 10px !important;
+}
+
+.subTitle{
+  font-size: 15px;
+  color:black;
+  text-align: left;
+  margin: 0px !important;
+  height: 30px;
+}
+
+.subTitleAlerts{
+  font-size: 20px;
+  color:black;
+  text-align: left;
+  margin: 0px !important;
+  height: 30px;
+}
+
+#token{
+  color:green;
+  font-weight: bold;
+}
+
+#population{
+  color:green;
+  font-weight: bold;
+}
+
+#messages{
+  color:red;
+  font-weight: bold;
+}
+
+/* Materials */
+
+.colorPetroleum{
+  color:white !important;
+  background: url(../images/materials/petroleum.png) no-repeat center !important;
+}
+
+.colorClay{
+  color:white !important;
+  background: url(../images/materials/clay.png) no-repeat center !important;
+}
+
+.colorSwamp{
+  color:white !important;
+  background: url(../images/materials/swamp.png) no-repeat center !important;
+}
+
+.colorWood{
+  color:white !important;
+  background: url(../images/materials/wood.png) no-repeat center !important;
+}
+
+.colorFoodWild{
+  color:white !important;
+  background: url(../images/materials/foodWild.png) no-repeat center !important;
+}
+
+.colorSand{
+  color:white !important;
+  background: url(../images/materials/sand.png) no-repeat center !important;
+}
+
+.colorUranium{
+  color:white !important;
+  background: url(../images/materials/uranium.png) no-repeat center !important;
+}
+
+.colorStone{
+  color:white !important;
+  background: url(../images/materials/stone.png) no-repeat center !important;
+}
+
+
+
+.colorWater{
+  color:white !important;
+  background: url(../images/materials/fresh-water.png) no-repeat center !important;
+}
+
+.colorSaltWater{
+  color:white !important;
+  background: url(../images/materials/saltwater.png) no-repeat center !important;
+}
+
+/* End Materialas */
+
+.containerDeleteBuildings{
+  display:none;
+  position: absolute;
+  width: 300px;
+  left: 10px;
+  top: 100px;
+}
+
+.containerContrucciones{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #c0c0c0;
+  padding: 1.0em;
+  box-shadow: inset 0 0 0 2px #616161;
+}
+
+.tokensPopulation{
+  position: fixed;
+  background-color: rgba(255,255,255, 0.8);
+  width: 320px;
+  left: 10px;
+  top: 45px;
+  height: 35px;
+  display: flex !important;
+  flex-wrap: wrap;
+}
+
+.alertContenedorPrueba{
+  position: fixed;
+  background-color: rgba(255,255,255, 0.8);
+  width: 320px;
+  right: 10px;
+  top: 45px;
+  height: 35px;
+  display: flex !important;
+  flex-wrap: wrap;
+}
+
+.construcciones{
+  position: fixed;
+  background-color: rgba(255,255,255, 0.8);
+  width: 320px;
+  left: 10px;
+  top: 80px;
+}
+
+.valueCells{
+  position: fixed;
+  background-color: rgba(255,255,255, 0.8);
+  width: 320px;
+  right: 10px;
+  top: 80px;
+}
+
+.containerContruccionesEpocas{
+  justify-content: space-around;
+  align-items: center;
+  background-color: #c0c0c0;
+  padding: 1.0em;
+  box-shadow: inset 0 0 0 2px #616161;
+}
+
+.flex{
+  display:flex !important;
+  flex-wrap: wrap;
+}
+
+.qa {
+  margin-bottom:10px;
+  float:left;
+  width: 300px;
+
+}
+.qa input {
+  display:none;
+}
+
+.qa i{
+  margin: 2px;
+}
+
+.qa label{
+  display:block;
+  height:30px;
+  line-height:30px;
+  font-weight:bold;
+  text-transform:uppercase;
+  cursor: pointer;
+}
+
+.qa label:before{
+  content:"+";
+  display:inline-block;
+  height:30px;
+  width:30px;
+  background:#ccc;
+  color:White;
+  text-align:center;
+  margin-right:10px;
+}
+
+.qa div {
+  display:none;
+  padding-top:5px;
+}
+
+.qa input:checked ~ label:before{
+  content:"-";
+  background:#3a4;
+}
+
+.qa input:checked ~ div{
+  display:block;
+}
+
+.iconInfoStone{
+  display:inline-block;
+  width: 30px;
+  height: 30px;
+  cursor:pointer;
+  background: url(../images/info-age-stone.jpg) no-repeat center !important;
+  float: left;
+}
+
+.iconInfoMetal{
+  display:inline-block;
+  width: 30px;
+  height: 30px;
+  cursor:pointer;
+  background: url(../images/info-age-metal.jpg) no-repeat center !important;
+  float: left;
+}
+
+.iconInfoOld{
+  display:inline-block;
+  width: 30px;
+  height: 30px;
+  cursor:pointer;
+  background: url(../images/info-age-old.jpg) no-repeat center !important;
+  float: left;
+}
+
+.iconInfoMiddle{
+  display:inline-block;
+  width: 30px;
+  height: 30px;
+  cursor:pointer;
+  background: url(../images/info-age-middle.jpg) no-repeat center !important;
+  float: left;
+}
+
+.iconInfoModern{
+  display:inline-block;
+  width: 30px;
+  height: 30px;
+  cursor:pointer;
+  background: url(../images/info-age-modern.jpg) no-repeat center !important;
+  float: left;
+}
+
+.iconInfoContemporary{
+  display:inline-block;
+  width: 30px;
+  height: 30px;
+  cursor:pointer;
+  background: url(../images/info-age-contemporary.jpg) no-repeat center !important;
+  float: left;
+}
+
+
+
+.iconInfoDataCell{
+  display:inline-block;
+  width: 30px;
+  height: 30px;
+  cursor:pointer;
+  background: url(../images/info-data-cell.jpg) no-repeat center !important;
+  float: left;
+}
+.iconInfoPopulation{
+  display:inline-block;
+  width: 30px;
+  height: 30px;
+  cursor:pointer;
+  background: url(../images/info-population.jpg) no-repeat center !important;
+  float: left;
+}
+.iconInfoRawMaterials{
+  display:inline-block;
+  width: 30px;
+  height: 30px;
+  cursor:pointer;
+  background: url(../images/info-raw-materials.jpg) no-repeat center !important;
+  float: left;
+}
+.iconInfoProcessedProducts{
+  display:inline-block;
+  width: 30px;
+  height: 30px;
+  cursor:pointer;
+  background: url(../images/info-processed-products.jpg) no-repeat center !important;
+  float: left;
+}
+.iconInfoPollution{
+  display:inline-block;
+  width: 30px;
+  height: 30px;
+  cursor:pointer;
+  background: url(../images/info-pollution.jpg) no-repeat center !important;
+  float: left;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 90%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.imageMainAges{
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+.foto2{
+  padding: 10px;
+  margin: 10px;
+  float: right;
+  width: 300px;
+}
+
+.modeDerribo{
+  width: 48px;
+  height: 48px;
+  cursor:pointer;
+  background: url(../images/icon-derruir.png) no-repeat center !important;
+  float: right;
+  padding-right: 10px;
+}
+
+.modeContruyo{
+  width: 48px;
+  height: 48px;
+  cursor:pointer;
+  background: url(../images/icon-construir.png) no-repeat center !important;
+  float: right;
+  padding-right: 10px;
+}
+
+
+.tokensIcon{
+  width: 46px;
+  background: url(../images/tokens.png) no-repeat center !important;
+}
+
+.alertsIcon{
+	width: 46px;
+  background: url(../images/alerts.png) no-repeat center !important;
+}
+
+.populationIcon{
+  width: 46px;
+  background: url(../images/population.png) no-repeat center !important;
+}
+
+.tokenPosition{
+  width: 100px;
+  height: 14px;
+  margin-top: 10px;
+  text-align: right;
+}
+
+.populationPosition{
+  width: 100px;
+  height: 14px;
+  margin-top: 10px;
+  text-align: right;
+}
+
+.subTitleright{
+  font-size: 15px;
+  color:black;
+  text-align: left;
+  height: 24px;
+  border-bottom: 1px solid black;
+  width: 260px;
+  color:black;
+  font-weight: bold;
+  margin: 0px !important;
+  margin-left: 5px !important;
+  margin-top: 5px !important;
+}
+
+.subTitleRightData{
+  text-align: right;
+  float: right;
+  color:green;
+  font-weight: bold;
+}
+
+.messagesPosition{
+  width: 218px;
+  height: 14px;
+  margin-top: 10px;
+  text-align: right;
+
+}
